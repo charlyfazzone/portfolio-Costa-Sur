@@ -34,9 +34,10 @@ a {
   color: cadetblue;
   font-weight: bold;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  padding: 20px;
+  padding: 13px;
   border-radius: 20px;
   background-size: cover;
+  border: #e0f7fa solid 2px;
 }
 
 main h2 {
@@ -51,6 +52,7 @@ main h2 {
 
 nav {
   margin-top: 10px;
+
 }
 
 nav a {
@@ -58,6 +60,7 @@ nav a {
   text-decoration: none;
   margin: 0 15px;
   font-weight: bold;
+  border: #f0f9ff solid:5px;
 }
 
 nav a:hover {
@@ -72,6 +75,9 @@ section {
   max-width: 1000px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+img{
+  height: 266.66px;
 }
 
 section h2 {
@@ -95,6 +101,7 @@ button:hover,
 .btn:hover {
   background-color: #004d40;
 }
+
 
 /* Footer */
 footer {
