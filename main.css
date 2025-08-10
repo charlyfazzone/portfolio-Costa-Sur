@@ -1,7 +1,9 @@
 * {
-  margin: 0;
-  padding: 0;
+  
   box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 /*Tipografia general*/
@@ -13,22 +15,13 @@ body {
 }
 
 
-
 /*Encabezado*/
 header {
   background-color: #004d40;
   color: white;
   padding: 20px 40px;
   text-align: center;
-
-
-
-
 }
-
-
-
-
 
 a {
   color: cadetblue;
@@ -44,10 +37,10 @@ main h2 {
   color: darkolivegreen;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 20px;
-  font-weight: 20px;
+  font-weight: 400;
   padding: 20px;
   border-radius: 20px;
-  background-size: cover;
+  
 }
 
 nav {
@@ -60,7 +53,7 @@ nav a {
   text-decoration: none;
   margin: 0 15px;
   font-weight: bold;
-  border: #f0f9ff solid:5px;
+  
 }
 
 nav a:hover {
@@ -78,7 +71,9 @@ section {
 }
 img{
   height: 266.66px;
+
 }
+
 
 section h2 {
   color: #00796b;
@@ -86,20 +81,19 @@ section h2 {
 }
 
 /*Botones*/
-button,
-.btn {
-  background-color: #00796b;
-  color: white;
-  border: none;
-  padding: 12px 20px;
-  border-radius: 5px;
+button{
+  background-color:#00796b;
+  color:white;
+  border:none;
+  padding:12px 20px;
+  border-radius:5px;
   cursor: pointer;
   font-size: 1em;
 }
 
-button:hover,
-.btn:hover {
+button:hover{
   background-color: #004d40;
+  
 }
 
 
@@ -156,5 +150,75 @@ footer {
   nav a {
     display: block;
     margin: 10px 0;
+  }
+  
+    
+}
+
+@media (max-width: 376px) {
+
+  body {
+    font-size: 14px;
+  }
+
+  header {
+    padding: 15px 20px;
+    text-align: center;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    display: block;
+    margin: 8px 0;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    background-color: #00695c;
+    border-radius: 6px;
+  }
+
+  main h2 {
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  section {
+    padding: 15px;
+    margin: 10px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  #llamada-a-la-accion {
+    padding: 20px 10px;
+    margin: 20px 10px;
+  }
+
+  #llamada-a-la-accion h2 {
+    font-size: 24px;
+  }
+
+  #llamada-a-la-accion .boton {
+    font-size: 16px;
+    padding: 10px 20px;
+    display: block;
+    width: 100%;
+  }
+
+  footer {
+    padding: 15px;
+    font-size: 14px;
   }
 }
